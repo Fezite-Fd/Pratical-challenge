@@ -1,0 +1,56 @@
+body { background: lightblue;
+}
+
+.content {	animation-name: fade-in; 
+			animation-duration: 3s;
+}
+
+.sidebar {	animation-name: fade-in; 
+			animation-duration: 7s;
+}
+
+img {	height: 300px; 
+		width: 400px; 
+		transition:0.5s all; 
+}
+
+.image-grid > img:hover{height: 350px; 
+						width: 450px;
+}
+
+#main { display: grid; 
+		grid-template-columns:auto auto; 
+		grid-gap: 20%;
+}
+
+p { font: sans-serif; }
+
+li { font: "time new roman" serif; 
+	font-weight: bold; }
+
+.sidebar{ background: orange; }
+
+.post { border: 5px solid blue; 
+		margin: 10px;}
+
+.image-grid{ display: flex; 
+			flex-wrap: wrap; 
+			justify-content: center;}
+
+.image-grid > img { margin: 10px; }
+
+#image1{ float: right; 
+		height: 220px; 
+		margin-left: 10px;}
+
+.post-title { margin-left: 5px; }
+
+.post-text { margin-left: 5px; }
+
+.subtitle {background: orange;}
+
+.post:hover {background: lightblue; 
+			height: 200px; width: 800px; 
+			transition: 4s all;}
+			
+@keyframes fade-in {from {opacity: 0} to{opacity: 1}}
